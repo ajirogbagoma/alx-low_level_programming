@@ -1,28 +1,28 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Return: Always 0 (Success)
+ *
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	char e;
+    char e;
+    char h;
 
-	char h;
+    e = 'a';
+    h = 'A';
+    while (e <= 'z')
+    {
+	    while (h <= 'Z')
+	    {
+		    putchar(h);
+		    h++
+            }
+	    putchar(e);
+	    e++;
+    }
+    putchar('\n');
 
-	e = 'g';
-	h = 'G';
-	while
-		(e <= 'z') {
-			putchar(e);
-			e++;
-		}
-	while
-		(h <= 'z') {
-			putchar (h);
-			h++;
-		}
-	putchar('\n');
-	return (0);
-
+    return (0);
 }
+
