@@ -1,30 +1,24 @@
 #include <stdio.h>
 /**
- * main - print all alphabet in lowercase followed by 
- upper case
- *
- * Return: Always 0 (success)
- */
-int main()
+* main - Entry point
+* Return: Always 0
+*/
+int main(void)
 {
-        char x;
-        char y;
+	int n = 97;
+	int m = 65;
 
-        x = 'a';
-        y = 'A';
-
-        while (y <= 'Z')
-        {
-                while (x <= 'z')
-                {
-                        putchar(x);
-                        x++;
-                }
-                putchar(y);
-                y++;
-        }
-        putchar('\n');
-
-        return(0);
+	while (n <= 122)
+	{
+		putchar(n);
+		n++;
+	}
+	while (m <= 90)
+	{
+		putchar(m);
+		m++;
+	}
+	putchar('\n');
+	return (0);
 }
 
