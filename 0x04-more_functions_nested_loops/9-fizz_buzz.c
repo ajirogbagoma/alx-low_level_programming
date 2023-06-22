@@ -14,16 +14,14 @@ int main(void)
 
 	for (r = 1; r <= 100; r++)
 	{
-		if (r % 15 == 0)
-			printf("FizzBuzz");
-		else if (r % 3 == 0)
-			printf("Fizz");
-		else if (r % 5 == 0)
-			printf("Buzz");
+		if (r % 3 == 0 && r % 5 != 0)
+			printf("Fizz ");
+		else if (r % 5 == 0 && r % 3 != 0)
+			printf("Buzz ");
+		else if (r % 5 == 0 && r % 3 == 0)
+			printf("FizzBuzz ");
 		else
-			printf('%r', r);
-		if (r < 100)
-			printf(" ");
+			printf("%d ", r);
 	}
 	printf("\n");
 	return (0);
