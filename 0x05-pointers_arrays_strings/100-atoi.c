@@ -2,12 +2,12 @@
 /**
  * _atoi - To convert a string to an integer
  * @s: The pointer to convert
- * return: A integer
+ * Return: A integer
  */
 int _atoi(char *s)
 {
 	int c = 0;
-	unsigned int ni = 0
+	unsigned int ni = 0;
 	int min = 1;
 	int isi = 0;
 
