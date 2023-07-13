@@ -10,18 +10,23 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *p
-	unsigned int m;
+	char *r;
+	int m = 0, k = 0;
 
-	if (nmemb == 0 || size == 0)
+	if (nmemb == 0 && size == 0)
 		return (NULL);
 
-	p = malloc(nmemb * size);
+	k = nmemb * size;
+	r = malloc(k);
 
-	if (p == NULL)
+	if (r == NULL)
 		return (NULL);
 
-	for (m = 0; m < (nmemb * size); m++)
-		p[m] = 0;
+	while (m < k)
+	{
+		r[m] = 0;
+		m++;
+	}
 
-	return (p);
+	return (r);
+}
