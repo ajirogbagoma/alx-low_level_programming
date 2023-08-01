@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "lists.h"
 /**
  * add_nodeint - A function that adds a new note at the beginning of a
