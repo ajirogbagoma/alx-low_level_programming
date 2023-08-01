@@ -30,7 +30,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	recent = malloc(sizeof(listint_t));
 	if (recent == NULL)
 		return (NULL);
-	recent->n= n;
+	recent->n = n;
 	if (idx == 0)
 	{
 		recent->next = *head;
