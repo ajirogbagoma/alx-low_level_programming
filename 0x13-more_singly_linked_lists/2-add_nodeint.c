@@ -2,6 +2,7 @@
 /**
  * add_nodeint - A function that adds a new note at the beginning of a
  * listint_t list
+ * @head: This points to the first node
  * @n: Where the new node integer contain
  * Return: The new address or NULL if the function fails
  */
